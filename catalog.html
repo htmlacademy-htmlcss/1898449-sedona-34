@@ -20,7 +20,7 @@
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link navigation-link-current">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
@@ -111,25 +111,27 @@
     </section>
 
     <section class="hotels-results">
-      <p class="hotels-result-count">Найдено гостиниц: 38</p>
+      <div class="hotels-result-caption">
+        <p class="hotels-result-count">Найдено гостиниц: 38</p>
 
-      <select class="select-control" arial-label="Сортировка">
-        <option value="cheap" selected>Сначала дешёвые</option>
-      </select>
+        <select class="select-control" arial-label="Сортировка">
+          <option value="cheap" selected>Сначала дешёвые</option>
+        </select>
 
-      <a class="button button-table-light" href="#">
-        <span class="visually-hidden">Показать карточки</span>
-      </a>
+        <a class="button button-table-light" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
 
-      <a class="button button-slide" href="#">
-        <span class="visually-hidden">Показать слайды</span>
-      </a>
+        <a class="button button-slide" href="#">
+          <span class="visually-hidden">Показать слайды</span>
+        </a>
 
-      <a class="button button-list" href="#">
-        <span class="visually-hidden">Показать список</span>
-      </a>
+        <a class="button button-list" href="#">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+      </div>
 
-      <ul>
+      <ul class="hotel-card-list">
         <li class="hotel-card">
           <a class="hotel-card-link" href="hotel.html">
             <img class="hotel-card-image" src="" alt="Amara Resort & Spa">
@@ -180,33 +182,37 @@
         </li>
       </ul>
 
-      <ul class="pagination">
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current" href="#">1</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">4</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">...</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">10</a>
-        </li>
-      </ul>
+      <div class="pagination-cont">
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ul>
+      </div>
 
-      <label for="hotels-per-page">Гостиниц на странице:</label>
-      <select name="hotels-per-page" id="hotels-per-page" class="select-control">
-        <option value="4" selected>4</option>
-        <option value="8">8</option>
-        <option value="12">12</option>
-      </select>
+      <div class="hotels-per-page-cont">
+        <label for="hotels-per-page">Гостиниц на странице:</label>
+        <select name="hotels-per-page" id="hotels-per-page" class="select-control">
+          <option value="4" selected>4</option>
+          <option value="8">8</option>
+          <option value="12">12</option>
+        </select>
+      </div>
     </section>
 
     <section class="subscribe">
@@ -225,16 +231,18 @@
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button" href=" https://vk.com/htmlacademy" <span class="visually-hidden">Vkontakte</span>
+          <a class="button" href=" https://vk.com/htmlacademy">
+            <span class="visually-hidden">Vkontakte</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href=" https://t.me/htmlacademy" <span class="visually-hidden">Telegram</span>
+          <a class="button" href=" https://t.me/htmlacademy">
+            <span class="visually-hidden">Telegram</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href=" https://www.youtube.com/user/htmlacademyru" <span
-            class="visually-hidden">Youtube</span>
+          <a class="button" href=" https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
