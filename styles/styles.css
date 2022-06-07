@@ -1,0 +1,238 @@
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    color:#000000;
+    background: #ffffff;
+}
+.page-header {
+    color:#000000;
+    background: #ffffff;
+}
+
+.navigation-link {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.main-index {
+    background-color: #ffffff;
+    color:#000000;
+}
+
+.hero-banner {
+    background-image: url("../images/welcome-background.jpg");
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 1200px;
+    height: 485px;
+}
+
+.advantages-intro {
+    text-align: center;
+}
+
+.advantages-intro-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700; 
+    text-transform: uppercase;
+}
+
+.advantages-intro-text {
+    color: #333333;
+}
+
+/* .advantages-list { 
+    text-align: center;  
+}*/
+
+.advantages-item {
+    background-color: rgba(131, 179, 211, 0.12); 
+    color: #000000;
+    text-align: center;  
+}
+
+.advantages-item-with-picture-container {
+background-color: #82B3D3;
+color:#ffffff;
+}
+
+.advantages-item-food {
+ background-color: #ffffff;   
+}
+
+.advantages-item-road {
+    background-color: rgba(131, 179, 211, 0.2); 
+}
+
+.advantages-item-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.advantages-item-number {   
+font-size: 18px;
+line-height: 21px;
+}
+
+.advantages-item-description {
+   font-size: 18px;
+    line-height: 21px; 
+}  
+  
+.search-hotel{
+    text-align: center;
+}
+.search-hotel-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.search-hotel-description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    
+}
+
+.button-search-hotel {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.subscribe-main-page{
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.subscribe-catalog-page {
+    text-align: center;
+}
+.subscribe-background-image {
+    background-image: url("../images/subscribe-background.jpg");
+    /*background-size: 100% auto;*/
+    width: 1200px;
+    height: 411px;
+    background-repeat: no-repeat;
+}
+
+.subscribe-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+
+}
+
+.subscribe-description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    
+}
+
+.footer-phone {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+}
+/*
+.inner-header{
+    color: #FFFFFF;
+}*/
+
+
+.inner-header-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+.breadcrumbs {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.hotels-filter-background {
+    background-image: url("../images/filter-background.jpg"); 
+    width: 1200px;
+    height: 393px;
+    background-repeat: no-repeat;
+}
+.page-footer {
+    text-align: center; 
+}
+
+.hotels-filter-title {
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+text-transform: capitalize;
+color: #FFFFFF;
+background-color:#000000;
+}
+
+.control {
+    color: #FFFFFF;
+    background-color:#000000;  
+}
+
+
+.hotels-result-count {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px; 
+    text-transform: uppercase;
+}
+
+.hotel-card-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.hotel-card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px; 
+    text-decoration: none;
+    color: #000000;
+}
+.hotel-card-link {
+    text-decoration: none;
+    color: #000000;
+}
+.hotel-card-rating {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #333333;
+}
