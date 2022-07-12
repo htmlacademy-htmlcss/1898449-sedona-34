@@ -101,6 +101,8 @@ body {
 .navigation-user .navigation-link {
   min-width: 18px;
   min-height: 18px;
+  padding: 22px 12px;
+  line-height: 1px;
 }
 
 .navigation-link {
@@ -142,7 +144,6 @@ body {
 
 .button {
   display: inline-block;
-
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 16px;
@@ -165,17 +166,21 @@ body {
 .button-brown {
   background-color: #756157;
 }
+
 .button-brown:hover {
   background-color: #615048;
 }
+
 .button-brown:focus {
   background-color: #615048;
   outline: none;
 }
-button-brown:active {
+
+.button-brown:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
+
 .button-brown:disabled,
 .button-green:disabled,
 .button-blue:disabled {
@@ -185,11 +190,13 @@ button-brown:active {
 .button-blue:hover {
   background-color: #68A2CA;
 }
+
 .button-blue:focus {
   background-color: #68A2CA;
   outline: none;
 }
-button-blue:active {
+
+.button-blue:active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -197,11 +204,13 @@ button-blue:active {
 .button-green:hover {
   background-color: #6C9E42;
 }
+
 .button-green:focus {
   background-color: #6C9E42;
   outline: none;
 }
-button-green:active {
+
+.button-green:active {
   background-color: #7DB54F;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -212,6 +221,10 @@ button-green:active {
   padding: 9px 15px 8px;
   margin-top: 14px;
   min-width: 130px;
+}
+
+.navigation-user .navigation-item:nth-child(2) {
+  margin-right: 19px;
 }
 
 .navigation-link:hover,
@@ -261,7 +274,6 @@ button-green:active {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
   padding: 0 290px 31px;
 }
 
@@ -269,7 +281,6 @@ button-green:active {
   color: #333333;
   margin: 0;
   padding: 0;
-  padding: 0 273px;
 }
 
 .advantages-list {
@@ -338,10 +349,11 @@ button-green:active {
   margin: 0;
   width: 230px;
   text-align: center;
+
 }
 
 .advantages-item-title-house {
-  margin-top: 100px;
+  margin-top: 102px;
 }
 
 .advantages-item-title-house::before {
@@ -357,7 +369,7 @@ button-green:active {
 }
 
 .advantages-item-title-food {
-  margin-top: 100px;
+  margin-top: 102px;
 }
 
 .advantages-item-title-food::before {
@@ -373,14 +385,14 @@ button-green:active {
 }
 
 .advantages-item-title-gifts {
-  margin-top: 100px;
+  margin-top: 102px;
 }
 
 .advantages-item-title-gifts::before {
   content: "";
   position: absolute;
-  top: 82px;
-  left: 163px;
+  top: 79px;
+  left: 168px;
   background-image: url(../images/gifts-icon.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -409,13 +421,13 @@ button-green:active {
   display: flex;
 }
 
-.advantages-image-container {
+.advantages-image {
   display: block;
 }
 
 .search-hotel {
   text-align: center;
-  padding-top: 91px;
+  padding-top: 88px;
   padding-bottom: 93px;
 }
 
@@ -439,17 +451,19 @@ button-green:active {
 .subscribe-main-page {
   text-align: center;
   color: #FFFFFF;
-}
-
-.subscribe-catalog-page {
-  text-align: center;
-}
-
-.subscribe-background-image {
   background-image: url("../images/subscribe-background.jpg");
   width: 1200px;
   height: 411px;
   background-repeat: no-repeat;
+}
+
+.subscribe-catalog-page {
+  text-align: center;
+  padding: 94px 200px;
+}
+
+.subscribe-background-image {
+  padding: 94px 200px;
 }
 
 .subscribe-title {
@@ -459,7 +473,6 @@ button-green:active {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  padding-top: 94px;
   padding-bottom: 29px;
 }
 
@@ -497,8 +510,6 @@ button-green:active {
 
 .field-subscribe {
   padding: 20px 22px;
-  color: #000000;
-  opacity: 0.6;
   border-radius: 10px 0 0 10px;
   flex-grow: 1;
   display: block;
@@ -516,6 +527,7 @@ button-green:active {
   margin: 0 auto;
   padding: 40px 70px 30px;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .footer-social {
@@ -617,6 +629,7 @@ button-green:active {
   padding: 0;
   list-style-type: none;
   margin-bottom: 40px;
+  line-height: 21px;
 }
 
 .breadcrumbs-item {
@@ -626,7 +639,7 @@ button-green:active {
 
 .breadcrumbs-item::after {
   position: absolute;
-  top: 10px;
+  top: 6px;
   right: -15px;
   background-image: url('../images/breadcrumbs-image-arrow.svg');
   width: 5px;
@@ -675,12 +688,16 @@ button-green:active {
 .hotels-filter-background {
   background-image: url("../images/filter-background.jpg");
   width: 1200px;
-  height: 393px;
+  height: 403px;
   background-repeat: no-repeat;
 }
 
+.hotels-filter-item {
+margin-bottom: 15px;
+}
+
 .hotels-filter-background1 {
-  padding: 35px 70px 70px;
+  padding: 35px 70px;
 }
 
 .page-footer {
@@ -732,6 +749,8 @@ button-green:active {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  line-height: 21px;
+  font-size: 18px;
 }
 
 .control {
@@ -744,7 +763,6 @@ button-green:active {
 .control-mark {
   position: absolute;
   left: 0;
-  top: 4px;
   width: 20px;
   height: 20px;
   background-color: #ffffff;
@@ -779,10 +797,22 @@ button-green:active {
   transform: rotate(-45deg);
 }
 
+.control:hover .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:focus-within .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
+}
+
+.control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
 .control-mark-radio {
   position: absolute;
   left: 0;
-  top: 4px;
   width: 20px;
   height: 20px;
   background-color: #ffffff;
@@ -801,41 +831,88 @@ button-green:active {
   content: "";
 }
 
+.control:hover .control-mark-radio {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:focus-within .control-mark-radio {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83b3d3;
+}
+
+.control:active .control-mark-radio {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .control-label {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  margin-bottom: 15px;
 }
 
 .range-input-wrapper {
   display: flex;
-  justify-content: space-between;
-  width: 288px;
-  border: 2px solid #fff;
-  border-radius: 4px;
+  width: 289px;
   margin-bottom: 32px;
 }
 
 .range-input {
-  width: 41px;
-  padding: 14px 2px;
-  text-align: center;
+  width: 144px;
+  padding: 12px 19px;
+  margin: 0;
   background-color: transparent;
   border: none;
   appearance: textfield;
-  font-family: 'PT Sans';
+  font: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
+  box-sizing: border-box;
+  border: 2px solid #ffffff;
 }
 
 .price-label {
   color: #FFFFFF;
   opacity: 0.3;
-  margin: 12px;
+  position: absolute;
+  top: 12px;
+  right: 14px;
+}
+
+.range-input-wrap {
+  display: flex;
+  position: relative;
+}
+
+.range-input-left {
+  border-right: 1px solid #ffffff;
+  border-radius: 4px 0 0 4px;
+}
+
+.range-input-right {
+  border-radius: 0 4px 4px 0;
+  border-left: 1px solid #ffffff;
+}
+
+.range-input:hover {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.range-input:focus:not(:active) {
+  box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
+  outline: none;
+}
+
+.range-input:active {
+  background: #756257;
+  border: 2px solid #FFFFFF;
+  outline: none;
+}
+
+.range-input:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -847,7 +924,7 @@ button-green:active {
 .range-scale {
   position: relative;
   height: 4px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-bar {
@@ -872,12 +949,12 @@ button-green:active {
 }
 
 .range-toggle:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:active {
-  border: 2px solid #83B3D3;
+  outline: 2px solid #83B3D3;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -894,13 +971,6 @@ button-green:active {
 .button-filter-wrap {
   width: 160px;
   margin-top: 60px;
-}
-
-.hotels-result-caption {
-  display: flex;
-  width: 1057px;
-  margin: 0 auto;
-  margin-bottom: 56px;
 }
 
 .button-filter {
@@ -921,8 +991,30 @@ button-green:active {
   border: none;
 }
 
+.button-filter-reset:hover {
+  opacity: 0.6;
+}
+
+.button-filter-reset:focus {
+  outline: 3px solid #83B3D3;
+  color: #FFFFFF;
+}
+
+.button-filter-reset:active {
+  opacity: 0.3;
+  outline: none;
+}
+
+.hotels-result-caption {
+  display: flex;
+  width: 1057px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+  align-items: center;
+}
+
 .hotels-results {
-  margin-top: 50px;
+  margin-top: 55px;
 }
 
 .hotels-result-count {
@@ -936,13 +1028,13 @@ button-green:active {
 }
 
 .sorting-type {
-  min-width: 270px;
-  margin-right: 78px;
+  min-width: 290px;
+  margin-right: 70px;
 }
 
 .select-control {
   width: 100%;
-  padding: 14px 20px;
+  padding: 12px 18px;
   padding-right: 48px;
   font-family: 'PT Sans';
   font-size: 18px;
@@ -956,6 +1048,20 @@ button-green:active {
   background-repeat: no-repeat;
   background-position: right 16px center;
   appearance: none;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border: 2px solid #68A2CA;
+  outline: none;
+}
+
+.select-control:active {
+  border: 2px solid #3F5E72;
+}
+
+.select-control:disabled {
+  opacity: 0.3;
 }
 
 .card-grid-toggle {
@@ -1095,16 +1201,15 @@ button-green:active {
   text-align: center;
   color: #333333;
   margin: 0;
-  width: 140px;
-  height: 37px;
   background: #F2F2F2;
   border-radius: 4px;
+  padding: 9px 21px 8px;
 }
 
 .hotel-card-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  gap: 18px;
+  column-gap: 18px;
   list-style-type: none;
   margin: 0;
   margin-bottom: 96px;
@@ -1126,6 +1231,7 @@ button-green:active {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .pagination-wrap {
@@ -1181,7 +1287,16 @@ button-green:active {
 }
 
 .hotels-per-page-wrap {
+  display: flex;
   width: 386px;
+}
+
+.hotels-per-page-text {
+  font-size: 18px;
+  line-height: 21px;
+  margin-right: 51px;
+  align-self: center;
+  align-items: center;
 }
 
 .select-control-min {
@@ -1205,7 +1320,7 @@ button-green:active {
 .modal {
   position: relative;
   margin: auto;
-  padding: 62px 70px;
+  padding: 62px 70px 70px;
   background-color: #ffffff;
   border-radius: 30px;
 }
@@ -1228,6 +1343,21 @@ button-green:active {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  background-color: #E6E6E6;
+  opacity: 0.3;
+  outline: none;
 }
 
 .modal-title {
@@ -1288,6 +1418,25 @@ button-green:active {
   box-sizing: border-box;
 }
 
+.field:hover {
+  background-color: #E6E6E6;
+}
+
+.field:focus {
+  outline: 2px solid #83B3D3;
+  border-radius: 2px;
+}
+
+.field:active {
+  background-color: #FFFFFF;
+  border: 2px solid #000000;
+}
+
+.field:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: #F2F2F2;
+}
+
 .count-field {
   width: 133px;
   border-radius: 4px;
@@ -1332,10 +1481,11 @@ button-green:active {
   border-radius: 4px;
   top: 13px;
   position: absolute;
+  box-sizing: border-box;
 }
 
 .minus-button {
-  left: 15px;
+  left: 14px;
 }
 
 .minus-button::before {
@@ -1348,7 +1498,7 @@ button-green:active {
 }
 
 .plus-button {
-  right: 15px;
+  right: 14px;
 }
 
 .plus-button::before,
@@ -1358,16 +1508,38 @@ button-green:active {
   width: 13px;
   height: 1px;
   background-color: rgba(0, 0, 0, 0.3);
+  right: 6px;
 }
 
 .plus-button::after {
   transform: rotate(90deg);
 }
 
+.field-button:hover:before,
+.field-button:hover:after {
+  background: #000000;
+}
+
+.field-button:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.field-button:focus:before,
+.field-button:focus:after {
+  background: #000000;
+}
+
+.field-button:active:before,
+.field-button:active:after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.field-button:active {
+  outline: none;
+}
+
 .counter-wrap {
   position: relative;
-  /* display: flex;
-  width: 133px; */
 }
 
 .search-label-wrap {
@@ -1378,14 +1550,15 @@ button-green:active {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  text-transform: capitalize;
 }
 
 .tooltip {
   position: absolute;
-  margin-top: 3px;
-  margin-left: 5px;
-  width: 16px;
-  height: 16px;
+  margin-top: 2px;
+  margin-left: 3px;
+  width: 25px;
+  height: 25px;
 }
 
 .tooltip-toggle {
@@ -1415,11 +1588,11 @@ button-green:active {
   padding: 15px 22px;
   width: 216px;
   position: absolute;
-  top: 220%;
+  top: 40px;
   margin-bottom: 6px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 2;
   display: none;
 }
 
@@ -1439,4 +1612,8 @@ button-green:active {
   right: 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+.search-form-button:focus {
+  outline: 3px solid #756257;
 }
