@@ -141,11 +141,11 @@
                     <legend class="hotels-filter-title">Стоимость, ₽:</legend>
                     <div class="range-input-wrapper">
                       <div class="range-input-wrap">
-                        <input class="range-input range-input-left" type="number" name="price-min" value="0">
+                        <input class="range-input range-input-left" type="number" id="price-min" value="0">
                         <label class="price-label" for="price-min">от</label>
                       </div>
                       <div class="range-input-wrap">
-                        <input class="range-input range-input-right" type="number" name="price-max" value="9000">
+                        <input class="range-input range-input-right" type="number" id="price-max" value="9000">
                         <label class="price-label" for="price-max">до</label>
                       </div>
                     </div>
@@ -177,22 +177,22 @@
           <div class="hotels-result-caption">
             <p class="hotels-result-count">Найдено гостиниц: 38</p>
             <div class="select sorting-type">
-              <select class="select-control" arial-label="Сортировка">
+              <select class="select-control">
                 <option value="cheap" selected>Сначала дешёвые</option>
                 <option value="popular">Сначала популярные</option>
                 <option value="expensive">Сначала дорогие</option>
               </select>
             </div>
 
-            <a class="card-grid-toggle table-view-toggle card-grid-toggle-current" type="button" href="#">
+            <a class="card-grid-toggle table-view-toggle card-grid-toggle-current" href="#">
               <span class="visually-hidden">Показать карточки</span>
             </a>
 
-            <a class="card-grid-toggle slideshow-view-toggle" type="button" href="#">
+            <a class="card-grid-toggle slideshow-view-toggle" href="#">
               <span class="visually-hidden">Показать слайды</span>
             </a>
 
-            <a class="card-grid-toggle list-view-toggle" type="button" href="#">
+            <a class="card-grid-toggle list-view-toggle" href="#">
               <span class="visually-hidden">Показать список</span>
             </a>
           </div>
@@ -375,7 +375,7 @@
 
           <section class="footer-contacts">
             <h2 class="visually-hidden">Телефон</h2>
-            <h3 class="footer-phone"><a class="footer-phone-link" href="tel: " +7 (812) 812-12-12">+7 (812)
+            <h3 class="footer-phone"><a class="footer-phone-link" href="tel:+7812-812-12-12">+7 (812)
                 812-12-12</a></h3>
           </section>
 
