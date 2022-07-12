@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -1036,7 +1036,7 @@ margin-bottom: 15px;
   width: 100%;
   padding: 12px 18px;
   padding-right: 48px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-style: normal;
