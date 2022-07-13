@@ -690,17 +690,17 @@ body {
 
 .hotels-filter-background {
   background-image: url("../images/filter-background.jpg");
-  width: 1200px;
-  height: 403px;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #3F5E72;
 }
 
-.hotels-filter-item {
+.hotels-filter-item:not(:last-child) {
   margin-bottom: 15px;
 }
 
 .hotels-filter-background1 {
-  padding: 35px 70px;
+  padding: 35px 70px 70px;
 }
 
 .page-footer {
@@ -974,6 +974,8 @@ body {
 .button-filter-wrap {
   width: 160px;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 .button-filter {
