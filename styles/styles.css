@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -30,6 +30,11 @@ body {
   flex-direction: column;
   min-height: 100%;
 }
+
+/* img {
+  max-width: 100%;
+  object-fit: contain;
+} */
 
 .visually-hidden {
   position: absolute;
@@ -246,20 +251,21 @@ body {
 }
 
 .hero-banner {
-  background-image: url("../images/welcome-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-image: url('../images/welcome-image-divider.svg'), url('../images/welcome-background.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-color: #3F5E72;
   width: 1200px;
   height: 485px;
+  background-position: bottom center, top center;
 }
 
-.hero-banner::after {
-  content: '';
-  position: absolute;
-  width: 1200px;
-  height: 57px;
-  background-image: url("../images/welcome-image-divider.svg");
-  top: 494px;
+.hero-welcome-text {
+  display: block;
+  margin: 0 auto;
+}
+
+.welcome-image-wrap {
+  padding-top: 51px;
 }
 
 .advantages-intro {
@@ -693,7 +699,7 @@ body {
 }
 
 .hotels-filter-item {
-margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .hotels-filter-background1 {
