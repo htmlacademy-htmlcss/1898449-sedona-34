@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -30,6 +30,11 @@ body {
   flex-direction: column;
   min-height: 100%;
 }
+
+/* img {
+  max-width: 100%;
+  object-fit: contain;
+} */
 
 .visually-hidden {
   position: absolute;
@@ -246,20 +251,21 @@ body {
 }
 
 .hero-banner {
-  background-image: url("../images/welcome-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-image: url("../images/welcome-image-divider.svg"), url("../images/welcome-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-color: #3F5E72;
   width: 1200px;
   height: 485px;
+  background-position: bottom center, top center;
 }
 
-.hero-banner::after {
-  content: '';
-  position: absolute;
-  width: 1200px;
-  height: 57px;
-  background-image: url("../images/welcome-image-divider.svg");
-  top: 494px;
+.hero-welcome-text {
+  display: block;
+  margin: 0 auto;
+}
+
+.welcome-image-wrap {
+  padding-top: 51px;
 }
 
 .advantages-intro {
@@ -361,7 +367,7 @@ body {
   position: absolute;
   top: 82px;
   left: 163px;
-  background-image: url(../images/house-icon.svg);
+  background-image: url("../images/house-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   width: 75px;
@@ -377,7 +383,7 @@ body {
   position: absolute;
   top: 82px;
   left: 163px;
-  background-image: url(../images/food-icon.svg);
+  background-image: url("../images/food-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   width: 74px;
@@ -393,7 +399,7 @@ body {
   position: absolute;
   top: 79px;
   left: 168px;
-  background-image: url(../images/gifts-icon.svg);
+  background-image: url("../images/gifts-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   width: 64px;
@@ -452,8 +458,8 @@ body {
   text-align: center;
   color: #FFFFFF;
   background-image: url("../images/subscribe-background.jpg");
-  width: 1200px;
-  height: 411px;
+  background-color: #3F5E72;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -477,9 +483,6 @@ body {
 }
 
 .subscribe-description {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
   margin: 0;
   padding: 0;
   padding-bottom: 46px;
@@ -641,7 +644,7 @@ body {
   position: absolute;
   top: 6px;
   right: -15px;
-  background-image: url('../images/breadcrumbs-image-arrow.svg');
+  background-image: url("../images/breadcrumbs-image-arrow.svg");
   width: 5px;
   height: 7px;
   background-repeat: no-repeat;
@@ -687,17 +690,17 @@ body {
 
 .hotels-filter-background {
   background-image: url("../images/filter-background.jpg");
-  width: 1200px;
-  height: 403px;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #3F5E72;
 }
 
-.hotels-filter-item {
-margin-bottom: 15px;
+.hotels-filter-item:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .hotels-filter-background1 {
-  padding: 35px 70px;
+  padding: 35px 70px 70px;
 }
 
 .page-footer {
@@ -858,10 +861,10 @@ margin-bottom: 15px;
 
 .range-input {
   width: 144px;
-  padding: 12px 19px;
+  padding: 12px 35px 11px 17px;
   margin: 0;
   background-color: transparent;
-  border: none;
+
   appearance: textfield;
   font: inherit;
   font-style: normal;
@@ -879,6 +882,8 @@ margin-bottom: 15px;
   position: absolute;
   top: 12px;
   right: 14px;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .range-input-wrap {
@@ -897,19 +902,24 @@ margin-bottom: 15px;
 }
 
 .range-input:hover {
-  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.6);
 }
 
-.range-input:focus:not(:active) {
-  box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
+.range-input:not(:placeholder-shown) {
+  background-color: #756257;
+}
+
+.range-input:focus {
+  box-shadow:
+    0 0 0 3px #81b3d2,
+    inset 0 0 0 3px #81b3d2;
   outline: none;
 }
 
-.range-input:active {
-  background: #756257;
-  border: 2px solid #FFFFFF;
-  outline: none;
+.range-input::placeholder {
+  color: #ffffff;
 }
+
 
 .range-input:disabled {
   border: 2px solid rgba(0, 0, 0, 0.3);
@@ -971,6 +981,8 @@ margin-bottom: 15px;
 .button-filter-wrap {
   width: 160px;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 .button-filter {
@@ -1036,7 +1048,7 @@ margin-bottom: 15px;
   width: 100%;
   padding: 12px 18px;
   padding-right: 48px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-style: normal;
@@ -1074,19 +1086,19 @@ margin-bottom: 15px;
 }
 
 .table-view-toggle {
-  background-image: url('../images/icon-table-view.svg');
+  background-image: url("../images/icon-table-view.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .slideshow-view-toggle {
-  background-image: url('../images/icon-slideshow-view.svg');
+  background-image: url("../images/icon-slideshow-view.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .list-view-toggle {
-  background-image: url('../images/icon-list-view.svg');
+  background-image: url("../images/icon-list-view.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1152,6 +1164,7 @@ margin-bottom: 15px;
 .hotel-card-link {
   text-decoration: none;
   color: #000000;
+  width: 300px;
 }
 
 .hotel-card-button {
@@ -1427,9 +1440,9 @@ margin-bottom: 15px;
   border-radius: 2px;
 }
 
-.field:active {
-  background-color: #FFFFFF;
-  border: 2px solid #000000;
+.field:not(:placeholder-shown) {
+  background-color: #ffffff;
+  outline: 2px solid #000000;
 }
 
 .field:disabled {
@@ -1482,6 +1495,7 @@ margin-bottom: 15px;
   top: 13px;
   position: absolute;
   box-sizing: border-box;
+  background-color: transparent;
 }
 
 .minus-button {
@@ -1602,7 +1616,7 @@ margin-bottom: 15px;
 }
 
 .tooltip-text:after {
-  content: '';
+  content: "";
   background-image: url("../images/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
