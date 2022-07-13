@@ -251,7 +251,7 @@ body {
 }
 
 .hero-banner {
-  background-image: url('../images/welcome-image-divider.svg'), url('../images/welcome-background.jpg');
+  background-image: url("../images/welcome-image-divider.svg"), url("../images/welcome-background.jpg");
   background-repeat: no-repeat, no-repeat;
   background-color: #3F5E72;
   width: 1200px;
@@ -644,7 +644,7 @@ body {
   position: absolute;
   top: 6px;
   right: -15px;
-  background-image: url('../images/breadcrumbs-image-arrow.svg');
+  background-image: url("../images/breadcrumbs-image-arrow.svg");
   width: 5px;
   height: 7px;
   background-repeat: no-repeat;
@@ -1041,7 +1041,7 @@ body {
   width: 100%;
   padding: 12px 18px;
   padding-right: 48px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-style: normal;
@@ -1079,19 +1079,19 @@ body {
 }
 
 .table-view-toggle {
-  background-image: url('../images/icon-table-view.svg');
+  background-image: url("../images/icon-table-view.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .slideshow-view-toggle {
-  background-image: url('../images/icon-slideshow-view.svg');
+  background-image: url("../images/icon-slideshow-view.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .list-view-toggle {
-  background-image: url('../images/icon-list-view.svg');
+  background-image: url("../images/icon-list-view.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1432,9 +1432,9 @@ body {
   border-radius: 2px;
 }
 
-.field:active {
-  background-color: #FFFFFF;
-  border: 2px solid #000000;
+.field:not(:placeholder-shown) {
+  background-color: #ffffff;
+  outline: 2px solid #000000;
 }
 
 .field:disabled {
@@ -1607,7 +1607,7 @@ body {
 }
 
 .tooltip-text:after {
-  content: '';
+  content: "";
   background-image: url("../images/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
