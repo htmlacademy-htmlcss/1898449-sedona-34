@@ -367,7 +367,7 @@ body {
   position: absolute;
   top: 82px;
   left: 163px;
-  background-image: url(../images/house-icon.svg);
+  background-image: url("../images/house-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   width: 75px;
@@ -383,7 +383,7 @@ body {
   position: absolute;
   top: 82px;
   left: 163px;
-  background-image: url(../images/food-icon.svg);
+  background-image: url("../images/food-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   width: 74px;
@@ -399,7 +399,7 @@ body {
   position: absolute;
   top: 79px;
   left: 168px;
-  background-image: url(../images/gifts-icon.svg);
+  background-image: url("../images/gifts-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   width: 64px;
@@ -861,10 +861,10 @@ body {
 
 .range-input {
   width: 144px;
-  padding: 12px 19px;
+  padding: 12px 35px 11px 17px;
   margin: 0;
   background-color: transparent;
-  border: none;
+
   appearance: textfield;
   font: inherit;
   font-style: normal;
@@ -882,6 +882,8 @@ body {
   position: absolute;
   top: 12px;
   right: 14px;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .range-input-wrap {
@@ -900,19 +902,24 @@ body {
 }
 
 .range-input:hover {
-  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.6);
 }
 
-.range-input:focus:not(:active) {
-  box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
+.range-input:not(:placeholder-shown) {
+  background-color: #756257;
+}
+
+.range-input:focus {
+  box-shadow:
+    0 0 0 3px #81b3d2,
+    inset 0 0 0 3px #81b3d2;
   outline: none;
 }
 
-.range-input:active {
-  background: #756257;
-  border: 2px solid #FFFFFF;
-  outline: none;
+.range-input::placeholder {
+  color: #ffffff;
 }
+
 
 .range-input:disabled {
   border: 2px solid rgba(0, 0, 0, 0.3);
