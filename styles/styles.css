@@ -1164,6 +1164,7 @@ body {
 .hotel-card-link {
   text-decoration: none;
   color: #000000;
+  width: 300px;
 }
 
 .hotel-card-button {
@@ -1494,6 +1495,7 @@ body {
   top: 13px;
   position: absolute;
   box-sizing: border-box;
+  background-color: transparent;
 }
 
 .minus-button {
